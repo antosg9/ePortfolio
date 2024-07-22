@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ePortfolio</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -12,10 +12,10 @@
       <div class="logo">Antoine GAUTREAU</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#about">Experience</a></li>
-          <li><a href="#about">Project</a></li>
-          <li><a href="#about">Contact</a></li>
+          <li><a href="#about">Me Découvrir</a></li>
+          <li><a href="#experience">Compétences</a></li>
+          <li><a href="#project">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -28,30 +28,30 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#about" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#about" onclick="toggleMenu()">Project</a></li>
-          <li><a href="#about" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Me Découvrir</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/profile-pic.jpg"
-          alt="Antoine GAUTREAU profile picture"
+          src="./assets/profile-pic.png"
+          alt="Antoine GAUTREAU photo de profil"
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p1">Bonjour, je suis</p>
         <h1 class="title">Antoine GAUTREAU</h1>
-        <p class="section__text__p2">Profession to set</p>
+        <p class="section__text__p2">Alternant Informatique en 3ème année</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/cv.pdf')"
+            onclick="window.open('./assets/cv.pdf', '_blank')"
           >
-            Download CV
+            Téléchargez mon CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -60,19 +60,304 @@
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="Mon profil LinkedIn"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/antoine-gautreau-b8723b264/'"
+            onclick="window.open('https://www.linkedin.com/in/antoine-gautreau-b8723b264/', '_blank')"
           />
           <img
             src="./assets/github.png"
-            alt="My GitHub profile"
+            alt="Mon profil GitHub"
             class="icon"
-            onclick="location.href='https://github.com/antosg9'"
+            onclick="window.open('https://github.com/antosg9','_blank')"
           />
         </div>
       </div>
     </section>
+    <section id="about">
+      <p class="section__text__p1">Apprenez à</p>
+      <h1 class="title">Me Découvrir</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Porfile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="expreience icon"
+                class="icon"
+              />
+              <h3>Expérience</h3>
+              <p>
+                Bertrand Franchise :<br />Assitant ERP Finance<br />Hôte de
+                table
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Formation</h3>
+              <p>
+                BUT Informatique<br />IUT de Paris Rives de Seine
+                <br />(Université Paris Cité)
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              De nature très dynamique, curieux et rigoureux je suis passioné
+              par les systèmes et réseaux et aspire à travailler dans la
+              cybersécurité. <br />
+              <br />
+              Actuellement alternant assitant chef de projets ERP Finance chez
+              Bertrand Franchise et étudiant à l'IUT de Paris - Rives de Seine -
+              Université Paris Cité.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorez mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Réseaux et systèmes</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Routage</h3>
+                  <p>Statique, DHCP, NAT (& PAT), DNS</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sécurité</h3>
+                  <p>RDP, VPN, Certificats, Serveurs Radius</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Systèmes</h3>
+                  <p>
+                    Windows server, Debian, Kali, Ubuntu Server, Cisco Packet
+                    Tracer
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Équipements</h3>
+                  <p>Point d'accès WIFI TP-Link, Switchs, Rasberry Pi</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Informatique</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Développement web</h3>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Développement logiciel</h3>
+                  <p>Java, Python, Go, C/C++, Visual Basic, Assembleur</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Divers</h3>
+                  <p>MongoDB, MySql</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Organisation en équipe</h3>
+                  <p>GitHub, Trello, Discord, Teams</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Cherchez mes plus récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">appMedicFront</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btns"
+                onclick="window.open('https://github.com/antosg9/appMedicFront', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">appMedicBack</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btns"
+                onclick="window.open('https://github.com/antosg9/appMedicBack', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              SI pour médiatèque en Java
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btns"
+                onclick="window.open('https://github.com/antosg9/but2-archiLog_java_projet', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entrez en contact avec moi</p>
+      <h1 class="title">Contactez Moi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:antos.gautreau@gmail.com"
+              >antos.gautreau@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/antoine-gautreau-b8723b264/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Me Découvrir</a></li>
+            <li><a href="#experience">Compétences</a></li>
+            <li><a href="#project">Projets</a></li>
+            <li><a href="#contact">Contact </a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
