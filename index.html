@@ -1,375 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Je suis Antoine GAUTREAU, étudiant apprenti en informatique chez Burger King France."
-    />
-    <title>Antoine GAUTREAU - Étudiant en informatique</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Antoine GAUTREAU</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Je suis Antoine GAUTREAU, étudiant apprenti en informatique chez Burger King France." />
+  <title>Antoine GAUTREAU - Étudiant en informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Antoine GAUTREAU</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Me Découvrir</a></li>
+        <li><a href="#experience">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Antoine Gautreau</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Me Découvrir</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Antoine GAUTREAU photo de profil" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Bonjour, je suis</p>
+      <h1 class="title">Antoine GAUTREAU</h1>
+      <p class="section__text__p2">Apprenti Ingénieur en 4ème année</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/cv_antoine_gautreau.pdf', '_blank')">
+          Téléchargez mon CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="Mon profil LinkedIn" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/antoine-gautreau-b8723b264/', '_blank')" />
+        <img src="./assets/github.png" alt="Mon profil GitHub" class="icon"
+          onclick="window.open('https://github.com/antosg9','_blank')" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Apprenez à</p>
+    <h1 class="title">Me Découvrir</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Porfile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="expreience icon" class="icon" />
+            <h3>Expérience</h3>
+            <p>Ministère de l'économie : Analyste SOC</p>
+            <p>Burger King France : Assitant chef de projet ERP Finance</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="education icon" class="icon" />
+            <h3>Formation</h3>
+            <p>2025-2028 : Ingénieur réseaux et sécurité - EFREI</p>
+            <p>
+              2022-2025 : BUT Informatique - IUT de Paris Rives de Seine (Université Paris Cité)
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Déterminé, rigoureux et organisé j'aspire à travailler en tant qu'architecte de sécurité cloud.<br />
+            <br />
+            Actuellement apprenti analyste SOC au Ministère de l'Économie et étudiant ingénieur réseaux et sécurité à
+            l'EFREI.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explorez mes</p>
+    <h1 class="title">Compétences</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Réseaux et systèmes</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Réseaux</h3>
+                <p>DHCP, NAT, PAT, DNS, RDP, VPN, Serveur Radius</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Sécurité</h3>
+                <p>Suite Elastic, Gatewatcher, certificats, Clés publiques / privées, SSH, Nmap, Wireshark</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Systèmes</h3>
+                <p>
+                  Docker, Linux, Windows Server, Debian, Kali, Ubuntu Server, Cisco Packet
+                  Tracer
+                </p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Équipements</h3>
+                <p>Point d'accès WIFI TP-Link, Switchs, Rasberry Pi</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Technologies</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Cloud</h3>
+                <p>AWS, GCP, Terraform</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Développement Web et base de données</h3>
+                <p>HTML, CSS, JavaScript, Angular, MongoDB, MySQL</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Développement logiciel</h3>
+                <p>Java, Python, Go, C/C++, Visual Basic, Assembleur</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Organisation en équipe</h3>
+                <p>GitHub, Trello, Notion, Suite Office</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Cherchez mes plus récents</p>
+    <h1 class="title">Projets</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Cloud SecOps Automation Lab</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btns" onclick="window.open('https://github.com/antosg9/cloud-secops-automation-lab', '_blank')">
+              GitHub
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">appMedic</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btns"
+              onclick="window.open('https://github.com/antosg9/appMedicFront', '_blank')">
+              Front
+            </button>
+            <button class="btn btn-color-2 project-btns"
+              onclick="window.open('https://github.com/antosg9/appMedicBack', '_blank')">
+              Back
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Gestion des identités et simulation d’attaques
+          </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btns"
+              onclick="window.open('./assets/cr_gestion_id_attaques.pdf', '_blank')">
+              Rapport
+            </button>
+            <button class="btn btn-color-2 project-btns"
+              onclick="window.open('./assets/ppt_gestion_id_attaques.pdf', '_blank')">
+              Soutenance
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">CuttyCat</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btns" onclick="window.open('./assets/cuttycat.pdf', '_blank')">
+              Rapport
+            </button>
+          </div>
+
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Entrez en contact avec moi</p>
+    <h1 class="title">Contactez Moi</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:antoine.gautreau.ssh@gmail.com">antoine.gautreau.ssh@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/antoine-gautreau-b8723b264/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">Me Découvrir</a></li>
           <li><a href="#experience">Compétences</a></li>
           <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact </a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Antoine Gautreau</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Me Découvrir</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./assets/profile-pic.png"
-          alt="Antoine GAUTREAU photo de profil"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Bonjour, je suis</p>
-        <h1 class="title">Antoine GAUTREAU</h1>
-        <p class="section__text__p2">Apprenti Ingénieur en 4ème année</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/cv_antoine_gautreau.pdf', '_blank')"
-          >
-            Téléchargez mon CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Mon profil LinkedIn"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/antoine-gautreau-b8723b264/', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Mon profil GitHub"
-            class="icon"
-            onclick="window.open('https://github.com/antosg9','_blank')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Apprenez à</p>
-      <h1 class="title">Me Découvrir</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Porfile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="expreience icon"
-                class="icon"
-              />
-              <h3>Expérience</h3>
-              <p>Ministère de l'économie : Analyste SOC</p>
-              <p>Burger King France : Assitant chef de projet ERP Finance</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="education icon"
-                class="icon"
-              />
-              <h3>Formation</h3>
-              <p>2025-2028 : Ingénieur réseaux et sécurité - EFREI</p>
-              <p>
-                2022-2025 : BUT Informatique - IUT de Paris Rives de Seine (Université Paris Cité)
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Déterminé, rigoureux et organisé j'aspire à travailler en tant qu'architecte de sécurité cloud.<br />
-              <br />
-              Actuellement apprenti analyste SOC au Ministère de l'Économie et étudiant ingénieur réseaux et sécurité à l'EFREI.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explorez mes</p>
-      <h1 class="title">Compétences</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Réseaux et systèmes</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Réseaux</h3>
-                  <p>DHCP, NAT, PAT, DNS, RDP, VPN, Serveur Radius</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Sécurité</h3>
-                  <p>Suite Elastic, Gatewatcher, certificats, Clés publiques / privées, SSH, Nmap, Wireshark</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Systèmes</h3>
-                  <p>
-                    Docker, Linux, Windows Server, Debian, Kali, Ubuntu Server, Cisco Packet
-                    Tracer
-                  </p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Équipements</h3>
-                  <p>Point d'accès WIFI TP-Link, Switchs, Rasberry Pi</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technologies</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Cloud</h3>
-                  <p>AWS, GCP, Terraform</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Développement Web et base de données</h3>
-                  <p>HTML, CSS, JavaScript, Angular, MongoDB, MySQL</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Développement logiciel</h3>
-                  <p>Java, Python, Go, C/C++, Visual Basic, Assembleur</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Organisation en équipe</h3>
-                  <p>GitHub, Trello, Notion, Suite Office</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Cherchez mes plus récents</p>
-      <h1 class="title">Projets</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">CuttyCat</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btns"
-                onclick="window.open('./assets/cuttycat.pdf', '_blank')"
-              >
-                Rapport
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">appMedic</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btns"
-                onclick="window.open('https://github.com/antosg9/appMedicFront', '_blank')"
-              >
-                Front
-              </button>
-              <button
-                class="btn btn-color-2 project-btns"
-                onclick="window.open('https://github.com/antosg9/appMedicBack', '_blank')"
-              >
-                Back
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Gestion des identités et simulation d’attaques
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btns"
-                onclick="window.open('./assets/cr_gestion_id_attaques.pdf', '_blank')"
-              >
-                Rapport
-              </button>
-              <button
-                class="btn btn-color-2 project-btns"
-                onclick="window.open('./assets/ppt_gestion_id_attaques.pdf', '_blank')"
-              >
-                Soutenance
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Entrez en contact avec moi</p>
-      <h1 class="title">Contactez Moi</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:antoine.gautreau.ssh@gmail.com"
-              >antoine.gautreau.ssh@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a
-              href="https://www.linkedin.com/in/antoine-gautreau-b8723b264/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Me Découvrir</a></li>
-            <li><a href="#experience">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact </a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
